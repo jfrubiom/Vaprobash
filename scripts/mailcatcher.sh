@@ -11,7 +11,8 @@ apache2 -v > /dev/null 2>&1
 APACHE_IS_INSTALLED=$?
 
 # Installing dependency
-sudo apt-get install -y build-essential g++ libsqlite3-dev ruby1.9.1-dev
+# -qq implies -y --force-yes
+sudo apt-get install -qq build-essential g++ libsqlite3-dev ruby1.9.1-dev
 
 if $(which rvm) -v > /dev/null 2>&1; then
 	echo ">>>>Installing with RVM"
