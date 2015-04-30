@@ -3,7 +3,7 @@
 echo ">>> Installing Redis"
 
 # Add repository
-sudo apt-add-repository ppa:rwky/redis -y
+sudo add-apt-repository ppa:chris-lea/redis-server
 
 # Install Redis
 # -qq implies -y --force-yes
